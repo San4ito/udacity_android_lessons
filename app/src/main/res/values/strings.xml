@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="MyName">Alex</string>
+    <string name="MyAvatar" translatable="false">MyAvatarImage</string>
+    <string name="CoffeBigText">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries
+        \nfrom certain Coffea species. All fruit must be further processed from a raw material—the fruit and
+        \nseed—into a stable, raw product; un-roasted, green coffee. To process the berries, the seed is
+        \nseparated from the fruit to produce green coffee. Green coffee is then roasted, a process which
+        transforms the raw product (green coffee) into a consumable product (roasted coffee).
+        \nRoasted coffee is ground into a powder and mixed with water to produce a cup of coffee.
+        \n\nCoffee is darkly colored, bitter, slightly acidic and has a stimulating effect in humans,
+        \nprimarily due to its caffeine content. It is one of the most popular drinks in the world, and
+        \ncan be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or
+        \nalready-brewed canned coffee). It is usually served hot, although chilled or iced coffee is common.
+        \nSugar, sugar substitutes, milk or cream are often used to lessen the bitter taste.
+        \nIt may be served with coffee cake or another sweet dessert like doughnuts.
+        \nA commercial establishment that sells prepared coffee beverages is known as a coffee shop
+        \n(not to be confused with Dutch coffeeshops selling cannabis).</string>
+    <string name="TextEditHint">Input new coffe type</string>
+    <string name="BtnDoneText">Done</string>
+
+</resources>
