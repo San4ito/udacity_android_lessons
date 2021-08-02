@@ -43,6 +43,14 @@
                 android:hint="@string/TextEditHint"
                 android:autofillHints=""/>
 
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                style="@style/MyNameStyle"
+                android:visibility="gone"
+                android:text="@={coffeName.coffe}"/>
+
         <Button
                 android:text="@string/BtnDoneText"
                 android:layout_width="wrap_content"
@@ -51,14 +59,6 @@
                 android:id="@+id/BtnDone"
 
                 style="@style/Widget.AppCompat.Button.Colored"/>
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                style="@style/MyNameStyle"
-                android:visibility="gone"
-                android:text="@={coffeName.coffe}"/>
 
         <ScrollView
                 android:layout_width="match_parent"
@@ -73,7 +73,8 @@
                     style="@style/MyNameStyle"
                     android:lineSpacingMultiplier="0.9"
                     app:drawableTopCompat="@android:drawable/ic_menu_view"
-                    android:paddingBottom="18dp"/>
+                    android:paddingBottom="18dp"
+                    />
         </ScrollView>
     </LinearLayout>
 </layout>
