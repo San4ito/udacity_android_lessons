@@ -21,14 +21,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.myName = sashaName
         binding.coffeName = coffename
-
-//        findViewById<Button>(R.id.BtnDone).setOnClickListener {
-//            addCoffeName(it)
-//        }
 
         binding.BtnDone.setOnClickListener {
             addCoffeName(it)
@@ -37,7 +33,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun addCoffeName(view: View) {
         binding.apply {
-//            textView2.text = binding.TextEditCoffe.text
             coffeName?.coffe = TextEditCoffe.text.toString()
             invalidateAll()
             TextEditCoffe.visibility = View.GONE
