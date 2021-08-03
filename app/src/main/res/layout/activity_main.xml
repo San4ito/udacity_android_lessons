@@ -1,56 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
-        <variable
-                name="myName"
-                type="com.example.aboutme.MyName"/>
-
-        <variable
-                name="coffeName"
-                type="com.example.aboutme.CoffeName"/>
+        <variable name="myName" type="com.example.aboutme.MyName"/>
+        <variable name="coffeName" type="com.example.aboutme.CoffeName"/>
     </data>
 
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".MainActivity"
-            android:orientation="vertical"
-            android:paddingStart="@dimen/paddingStartEnd"
-            android:paddingEnd="@dimen/paddingStartEnd"
-            android:id="@+id/MainLauiyt">
-
+            tools:context=".MainActivity" android:orientation="vertical" android:paddingStart="@dimen/paddingStartEnd"
+            android:paddingEnd="@dimen/paddingStartEnd">
         <TextView
                 android:text="@={myName.name}"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                style="@style/MyNameStyle"/>
-
+                android:layout_height="wrap_content" android:id="@+id/textView3" style="@style/MyNameStyle"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/TextEditCoffe"
-                style="@style/MyNameStyle"
-                android:textAlignment="center"
-                android:hint="@string/TextEditHint"
-                android:autofillHints=""/>
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                style="@style/MyNameStyle"
-                android:visibility="gone"
-                android:text="@={coffeName.coffe}"/>
-
+                android:id="@+id/TextEditCoffe" style="@style/MyNameStyle" android:textAlignment="center"
+                android:hint="@string/TextEditHint" android:autofillHints="" android:autoText="false"/>
         <Button
                 android:text="@string/BtnDoneText"
                 android:layout_width="wrap_content"
@@ -59,22 +32,22 @@
                 android:id="@+id/BtnDone"
 
                 style="@style/Widget.AppCompat.Button.Colored"/>
-
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView2" style="@style/MyNameStyle"
+                android:visibility="gone"
+                android:text="@={coffeName.coffe}"/>
         <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/coffe_scroll">
+                android:layout_height="match_parent" android:id="@+id/coffe_scroll">
 
             <TextView
                     android:text="@string/CoffeBigText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/coffeText"
-                    style="@style/MyNameStyle"
+                    android:id="@+id/coffeText" style="@style/MyNameStyle"
                     android:lineSpacingMultiplier="0.9"
-                    app:drawableTopCompat="@android:drawable/ic_menu_view"
-                    android:paddingBottom="18dp"
-                    />
+                    app:drawableTopCompat="@android:drawable/ic_menu_view" android:paddingBottom="18dp"/>
         </ScrollView>
     </LinearLayout>
 </layout>
